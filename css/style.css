@@ -77,3 +77,22 @@ button:disabled{opacity:.48;cursor:not-allowed;filter:none}
 .workspace .topbar .ucan-previous-lesson:hover{text-decoration:underline}
 .workspace .topbar .ucan-previous-lesson:focus-visible{outline:3px solid #e7a71f;outline-offset:2px}
 @media(max-width:680px){.workspace .topbar{flex-wrap:wrap;column-gap:8px;row-gap:6px}}
+
+/* Use the same horizontal, scrollable course controls across screen sizes. */
+.layout{display:block;min-height:100vh}
+.workspace .topbar{flex-wrap:wrap}
+.workspace .topbar .brand{margin:0;color:#103b43;font-size:22px;line-height:1.2}
+.workspace .topbar .brand small{font-size:11px}
+.workspace .topbar .lesson24-module{color:#164b50;flex:1 1 220px}
+.workspace .topbar .lesson24-reset{font-size:.8rem;min-height:42px}
+.lesson24-progress,.lesson24-route-nav{width:min(calc(100% - 48px),1140px);margin-inline:auto}
+.lesson24-progress{padding:14px 0 8px;color:#164b50}
+.lesson24-progress p{margin:0 0 7px;font-size:.84rem;font-weight:650}
+.lesson24-progress .progress{background:#d6e8e4}
+.lesson24-progress .progress span{background:#087f75;width:10%}
+.lesson24-route-nav{display:flex;gap:8px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;padding:7px 4px 12px}
+.lesson24-route-nav .nav-item{flex:0 0 auto;min-height:44px;gap:7px;background:#fff;color:#164b50;border:1px solid #aacbc6;border-radius:999px;padding:8px 13px;font-weight:700}
+.lesson24-route-nav .nav-item.active{background:#164b50;color:#fff;border-color:#164b50}
+.lesson24-route-nav .nav-item:focus-visible{outline:3px solid #b87906;outline-offset:1px}
+@media(max-width:680px){.lesson24-progress,.lesson24-route-nav{width:calc(100% - 24px)}.workspace .topbar .lesson24-module{order:4;flex-basis:100%}.lesson24-route-nav .nav-item{font-size:.82rem}}
+@media print{.lesson24-progress,.lesson24-route-nav{display:none}}
