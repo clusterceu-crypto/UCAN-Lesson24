@@ -71,3 +71,9 @@ button:disabled{opacity:.48;cursor:not-allowed;filter:none}
 #page-6 .scenario-guide{margin:12px 0 16px;line-height:1.65}
 #page-6 .scenario p{margin:10px 0 0;line-height:1.6}
 #page-6 .scenario p strong{font-weight:700}
+
+/* Link to the previous UCAN lesson. */
+.workspace .topbar .ucan-previous-lesson{display:inline-flex;align-items:center;justify-content:center;gap:.35em;flex:0 0 auto;min-height:42px;box-sizing:border-box;padding:6px 10px;border:1px solid currentColor;border-radius:9px;text-decoration:none;font-size:.8rem;font-weight:700;line-height:1.2;color:#164b50}
+.workspace .topbar .ucan-previous-lesson:hover{text-decoration:underline}
+.workspace .topbar .ucan-previous-lesson:focus-visible{outline:3px solid #e7a71f;outline-offset:2px}
+@media(max-width:680px){.workspace .topbar{flex-wrap:wrap;column-gap:8px;row-gap:6px}}
